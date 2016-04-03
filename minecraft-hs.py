@@ -1,4 +1,4 @@
-#www.stuffaboutcode.com
+#Original code (c) www.stuffaboutcode.com 2013
 #Raspberry Pi, Minecraft - hide and seek
 #updating to current version on Raspberry Pi Minecraft & Python3
 #import the minecraft.py module from the minecraft directory
@@ -21,9 +21,10 @@ def distanceBetweenPoints(point1, point2):
     yd = point2.y - point1.y
     zd = point2.z - point1.z
     return math.sqrt((xd*xd) + (yd*yd) + (zd*zd))
-    
-if __name__ == "__main__":
 
+#infite loop    
+while true:
+    
     #Connect to minecraft by creating the minecraft object
     # - minecraft needs to be running and in a game
     mc = minecraft.Minecraft.create()
@@ -78,4 +79,4 @@ if __name__ == "__main__":
     time.sleep(5)
     
     mc.postToChat("www.stuffaboutcode.com")
-
+    break
